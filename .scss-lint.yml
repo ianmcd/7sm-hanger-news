@@ -1,0 +1,12 @@
+# scss linter config file -- more info:
+#   scss linter       ->  https://github.com/causes/scss-lint
+#   config options    ->  https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md
+#   default settings  ->  https://github.com/causes/scss-lint/blob/master/config/default.yml
+
+
+linters:
+  NestingDepth:
+    max_depth: 4
+
+  SelectorFormat:
+    convention: hyphenated_BEM
