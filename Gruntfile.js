@@ -9,6 +9,9 @@ module.exports = function(grunt) {
   //	times tasks for future optimization
   require('time-grunt')(grunt);
 
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     // scss linter
     scsslint: {
       options: {
