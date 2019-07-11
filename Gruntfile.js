@@ -12,6 +12,21 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    //	grunt server
+    connect: {
+      options: {
+        port: 4444,
+        hostname: 'localhost',
+        open: true,
+        livereload: 35729
+      },
+      dev: {
+        options: {
+          base: ''
+        }
+      }
+    },
+
     // scss linter
     scsslint: {
       options: {
@@ -52,6 +67,16 @@ module.exports = function(grunt) {
         files: ['_source-files/scss/**/*.scss'],
         tasks: ['scsslint:build', 'sass', 'postcss:build']
       },
+      livereload: {
+        options: {
+          livereload: true
+        },
+        files: [
+          '**/*.html',
+          '**/*.css',
+          '**/*.js'
+        ]
+      }
     }
   });
 
@@ -61,6 +86,7 @@ module.exports = function(grunt) {
     'scsslint',
     'sass',
     'postcss',
+    'connect',
     'watch',
   ]);
 
