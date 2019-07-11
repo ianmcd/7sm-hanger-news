@@ -12,3 +12,11 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+
+.arrow-right {
+  height: 11px;
+  opacity: .6;
+  stroke: $orange;
+  transition: stroke .3s, opacity .3s, transform .3s;
+  width: 11px;
+}
