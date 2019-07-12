@@ -2,4 +2,7 @@
   <symbol id="right-arrow" viewBox="0 0 14 14">
       <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h10M7 2l5 5-5 5"/></g>
   </symbol>
+  <symbol id="comment-bubble" viewBox="0 0 17 17">
+    <path d="M1 8.083a6.984 6.984 0 0 0 .75 3.167 7.083 7.083 0 0 0 6.333 3.917 6.983 6.983 0 0 0 3.167-.75L16 16l-1.583-4.75a6.983 6.983 0 0 0 .75-3.167A7.083 7.083 0 0 0 11.25 1.75 6.984 6.984 0 0 0 8.083 1h-.416A7.067 7.067 0 0 0 1 7.667v.416z" fill-rule="evenodd"/>
+  </symbol>
 </svg>

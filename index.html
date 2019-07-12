@@ -6,64 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <main class="news__wrapper">
-      <article class="news__article news__article--primary">
-        <figure><img src="img/girl-texting-prosthetic-arm.jpg" /></figure>
-        <div class="news__content-wrapper">
-          <ul class="list__no-format news__article-meta">
-            <li class="article-topic"><a href="#">Topic Name</a></li>
-            <li><a href="#">34 Comments</a></li>
-          </ul>
-          <p class="news__heading-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <ul class="list__no-format news__article-meta news__article-meta--inline">
-            <li><time class="article-date">July 9, 2019</time></li>
-            <li><strong class="article-author">Jennifer Osada</strong></li>
-          </ul>
-          <a href="#" class="news__more-link">
-            Read Full Article
-            <svg class="arrow-right" aria-hidden="true" focusable="false">
-              <use xlink:href="img/icons.svg#right-arrow"></use>
-            </svg>
-          </a>
+  <body style="padding-top: 30px; padding-bottom: 30px;">
+    <main class="container">
+      <div class="row">
+        <div class="col-lg-8 article-wrapper">
+          <article class="news__article news__article--primary">
+          <figure><img src="img/girl-texting-prosthetic-arm.jpg" /></figure>
+          <div class="news__content-wrapper">
+            <div class="news-content">
+              <ul class="list__no-format news__article-meta">
+                <li class="article-topic"><a href="#">Topic Name</a></li>
+                <li><time class="article-date">July 9, 2019</time></li>
+              </ul>
+              <p class="news__heading-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <ul class="list__no-format news__article-meta news__article-meta--inline">
+                <li><strong class="article-author">Jennifer Osada</strong></li>
+                <li>
+                  <a href="#" class="article-comments">
+                    <svg class="comment-bubble" aria-hidden="true" focusable="false">
+                      <use xlink:href="img/icons.svg#comment-bubble"></use>
+                    </svg>
+                    <span>34 Comments</span>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="button news__more-link">
+                Read Full Article
+                <svg class="arrow-right" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/icons.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
         </div>
-      </article>
-      <article class="news__article">
-        <div class="news__content-wrapper">
-          <ul class="list__no-format news__article-meta">
-            <li class="article-topic"><a href="#">Topic Name</a></li>
-            <li><time class="article-date">July 9, 2019</time></li>
-          </ul>
-          <a href="#" class="news__article-link">
-            <p class="news__heading-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            <span class="news__more-link">
-              Read Full Article
-              <svg class="arrow-right" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons.svg#right-arrow"></use>
-              </svg>
-            </span>
-          </a>
+        <div class="col-lg-4 news__sidebar-wrapper">
+          <div class="row">
+            <div class="col-md">
+              <article class="col-md news__article">
+                <div class="news__content-wrapper">
+                  <ul class="list__no-format news__article-meta">
+                    <li class="article-topic"><a href="#">Topic Name</a></li>
+                    <li><time class="article-date">July 9, 2019</time></li>
+                  </ul>
+                  <a href="#" class="news__article-link">
+                    <p class="news__heading-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <span class="news__more-link">
+                      Read Full Article
+                      <svg class="arrow-right" focusable="false">
+                        <use xlink:href="img/icons.svg#right-arrow"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md">
+              <article class="col-md news__article">
+                <div class="news__content-wrapper">
+                  <ul class="list__no-format news__article-meta">
+                    <li class="article-topic"><a href="#">Topic Name</a></li>
+                    <li><time class="article-date">July 9, 2019</time></li>
+                  </ul>
+                  <a href="#" class="news__article-link">
+                    <p class="news__heading-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <span class="news__more-link">
+                      Read Full Article
+                      <svg class="arrow-right" focusable="false">
+                        <use xlink:href="img/icons.svg#right-arrow"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="news__article">
-        <div class="news__content-wrapper">
-          <ul class="list__no-format news__article-meta">
-            <li class="article-topic"><a href="#">Topic Name</a></li>
-            <li><time class="article-date">July 9, 2019</time></li>
-          </ul>
-          <a href="#" class="news__article-link">
-            <p class="news__heading-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            <span class="news__more-link">
-              Read Full Article
-              <svg class="arrow-right" aria-hidden="true" focusable="false">
-                <use xlink:href="img/icons.svg#right-arrow"></use>
-              </svg>
-            </span>
-          </a>
-        </div>
-      </article>
+      </div>
     </main>
   </body>
 </html>

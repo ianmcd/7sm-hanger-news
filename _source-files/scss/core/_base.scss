@@ -1,6 +1,4 @@
 * {
-  box-sizing: border-box;
-
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -11,12 +9,16 @@ body { font-family: 'Roboto', sans-serif; }
 a {
   display: inline-block;
   text-decoration: none;
-}
 
-.arrow-right {
-  height: 11px;
-  opacity: .6;
-  stroke: $orange;
-  transition: stroke .3s, opacity .3s, transform .3s;
-  width: 11px;
+  &:hover { text-decoration: none; }
+
+  &.button {
+    background: linear-gradient(105deg, $yellow-orange 0%, $red-orange 100%);
+    border-radius: 3px;
+    color: $white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 13px;
+  }
 }
