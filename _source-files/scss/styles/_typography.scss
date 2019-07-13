@@ -14,16 +14,21 @@
 
 @media (min-width: 768px) {
   .news__heading-1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 300;
-    letter-spacing: .5px;
     line-height: 1.188em;
   }
 
   .news__heading-2 {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 300;
-    letter-spacing: .5px;
     line-height: 1.188em;
   }
+}
+
+
+@media (min-width: 1200px) {
+  .news__heading-1 {  font-size: 32px; }
+
+  .news__heading-2 { font-size: 24px; }
 }
