@@ -225,11 +225,34 @@ a:hover {
 a.button {
   background: linear-gradient(105deg, #faa634 0%, #ff5f2f 100%);
   border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   display: inline-block;
   height: 40px;
   line-height: 40px;
   padding: 0 13px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+a.button .arrow-right {
+  opacity: .6;
+  stroke: #fff;
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
+}
+a.button:hover {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07), 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07), 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+a.button:hover .arrow-right {
+  opacity: 1;
+  stroke: #fff;
+  -webkit-transform: translate(3px, -1px);
+          transform: translate(3px, -1px);
 }
 
 .news__heading-1,
@@ -250,6 +273,13 @@ a.button {
 @media (min-width: 768px) {
   .news__heading-1 {
     font-size: 32px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.188em;
+  }
+
+  .news__heading-2 {
+    font-size: 24px;
     font-weight: 300;
     letter-spacing: .5px;
     line-height: 1.188em;
@@ -381,8 +411,8 @@ a.button {
   transition: color .3s;
 }
 .news__more-link .arrow-right {
-  -webkit-transform: translate(1px, -1px);
-          transform: translate(1px, -1px);
+  -webkit-transform: translate(0, -1px);
+          transform: translate(0, -1px);
 }
 
 .news__article-link:hover .news__more-link,
@@ -393,8 +423,8 @@ a.button {
 .news__more-link:hover .arrow-right {
   opacity: 1;
   stroke: #ff5f2f;
-  -webkit-transform: translate(4px, -1px);
-          transform: translate(4px, -1px);
+  -webkit-transform: translate(3px, -1px);
+          transform: translate(3px, -1px);
 }
 
 .news__article--primary {
