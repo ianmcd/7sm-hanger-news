@@ -79,6 +79,19 @@
   font-weight: 500;
 }
 
+.article-comments {
+  transition: color .3s;
+
+  &:hover {
+    color: $text-medium;
+
+    .comment-bubble {
+      fill: $text-medium;
+      opacity: 1;
+    }
+  }
+}
+
 .arrow-right {
   height: 11px;
   opacity: .6;
@@ -226,6 +239,8 @@
 
 @media (min-width: 992px) {
   .news__article--secondary { margin-bottom: 30px; }
+
+  .article-topic a { font-size: 13px; }
 
   .news__article--primary {
     margin-bottom: 0;

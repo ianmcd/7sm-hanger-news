@@ -386,6 +386,18 @@ a:hover {
   font-weight: 500;
 }
 
+.article-comments {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.article-comments:hover {
+  color: #6d6e71;
+}
+.article-comments:hover .comment-bubble {
+  fill: #6d6e71;
+  opacity: 1;
+}
+
 .arrow-right {
   height: 11px;
   opacity: .6;
@@ -551,6 +563,10 @@ a:hover {
 @media (min-width: 992px) {
   .news__article--secondary {
     margin-bottom: 30px;
+  }
+
+  .article-topic a {
+    font-size: 13px;
   }
 
   .news__article--primary {
