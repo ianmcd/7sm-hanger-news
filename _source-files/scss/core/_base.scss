@@ -3,46 +3,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
-
 body { font-family: 'Roboto', sans-serif; }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-
-  &:hover { text-decoration: none; }
-}
-
-
-@media (min-width: 768px) {
-  //// scss-lint:disable QualifyingElement
-  a.button {
-    background: linear-gradient(105deg, $yellow-orange 0%, $red-orange 100%);
-    border-radius: 3px;
-    box-shadow: 0 1px 3px 0 rgba($black, .07), 0 4px 6px 0 rgba($black, .1);
-    color: $white;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 13px;
-    transition: all .3s;
-
-    .arrow-right {
-      opacity: .6;
-      stroke: $white;
-      transform: translate(0, -1px);
-    }
-
-    &:hover {
-      box-shadow: 0 3px 6px 0 rgba($black, .07), 0 7px 14px 0 rgba($black, .1);
-      color: $white;
-      transform: translateY(-1px);
-
-      .arrow-right {
-        opacity: 1;
-        stroke: $white;
-        transform: translate(3px, -1px);
-      }
-    }
-  }
+.list__no-format {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
